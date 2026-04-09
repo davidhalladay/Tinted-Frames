@@ -2048,7 +2048,7 @@ class MMMUProSampler(BaseSampler):
         for s in sampled:
             options = s['options']
             option_str = '\n'.join(f"{chr(65+i)}. {opt}" for i, opt in enumerate(options))
-            question_text = f"{s['question']}\n{option_str}"
+            question_text =  "" # question is already in the image as screen text, so we leave it empty here
 
             formatted.append({
                 'task_type': 'mcq',
