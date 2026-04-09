@@ -3,7 +3,6 @@
 
 echo "########################################## Baseline"
 FINETUNE_MODE="none" \
-CHECKPOINT_PATH="" \
 OUTPUT_DIR="checkpoints/evaluation/baseline" \
 bash scripts/run_evaluation_base.sh
 
